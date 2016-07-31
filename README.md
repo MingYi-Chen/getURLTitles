@@ -1,0 +1,1 @@
+主要方便写markdown元件，将参考的url快速转换成 markdown格式，[title](url)，达到快速编写 markdown。
