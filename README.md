@@ -8,12 +8,12 @@
 1. 展示一则网页于 Safari ，「Cmd + Shift + D」加入至 Reading List
 2. 打开 Terminal 
 3. 执行 ./readinglisturls.py >> ReadingList.txt(若是权限问题则命令行输入 chmod +x readinglisturls.py)
-4. 执行 ./getURLTitles.ssh ，输入 「ReadingList.txt」输入 「OutputReadingList.md」
+4. 执行 ./getURLTitles.sh ，输入 「ReadingList.txt」输入 「OutputReadingList.md」
 ~~~
 
 #### 自动
 ~~~
-命令行执行>>  ./MarkDownFromReadingList.ssh
+命令行执行>>  ./MarkDownFromReadingList.sh
 ~~~
 
 
