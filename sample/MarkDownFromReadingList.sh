@@ -14,6 +14,11 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
 	printf "* [" >> $outputfile;
 	wget -qO- $line | perl -l -0777 -ne 'printf $1 if /<title.*?>\s*(.*?)\s*<\/title/si' > $oriOutput
 	
+if ! [ -s $oriOutput ] 
+then
+ echo "no title" > $oriOutput ;
+fi
+	
 	#for gb2312 	
 	if iconv -f cp936 -t utf-8 $oriOutput > $encOutput ; then 		
 		cat $encOutput >> $outputfile
