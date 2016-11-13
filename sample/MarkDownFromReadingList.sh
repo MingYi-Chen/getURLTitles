@@ -31,8 +31,10 @@ done < $inputfile
 printf "Complete!!"
 
 
+rm $inputfile
+rm $oriOutput
+rm $encOutput
 
-rm ReadingList.txt
 
 
 
